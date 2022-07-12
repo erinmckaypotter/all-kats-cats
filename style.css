@@ -1,0 +1,282 @@
+/*FONTS - Anton + Bebas Neue*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap');
+/*FONTS - Yellowtail + Monserrat*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Yellowtail&display=swap');
+
+
+html, body {
+    height: 100vh;
+    min-height: 100vh;
+    width: 100%;
+
+    color: #F27C3D;
+    background-color: #1D2024;
+
+    font-family: monserrat, sans-serif;
+  }
+  
+h1 {
+    font-family: 'yellowtail', cursive;
+    color: #FAC00C;
+}
+
+h2 {
+    color: #F27C3D;
+}
+
+footer {
+    background-color: black;
+    color: #F8F9FA;
+}
+
+/* || NAV */
+.dropdown-item.active {
+    background-color: #FAC00C;
+    color: black;
+}
+
+.dropdown-item.focus {
+    background-color: #FAC00C;
+    color: black;
+}
+
+
+/* || Links */
+a {
+    color: #FAC00C;
+}
+
+a:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    color: #FAC00C;   
+}
+
+/* Lightbox Links (remove styles)  */
+.gallery a {
+    text-decoration: none;
+}
+
+.gallery a:hover {
+    background-color: initial;
+}
+
+
+/* || Text */
+.display-1 { /*BS CLASS*/
+    font-size: calc(1.625rem + 10.5vw) !important;
+}
+
+.display-2 {
+    font-size: calc(1.625rem + 6.5vw) !important;
+}
+
+.text-muted {  /* BS CLASS*/
+    color: rgba(242, 124, 61, .7) !important;
+}
+
+
+/* || Images */
+.circle-img {
+    border-radius: 60%;
+    max-width: 90%;
+    border:2px solid rgba(255, 255, 255, 0.25);
+
+}
+
+.circle-hero-img {
+    background-image: url("assets/heroimage_1000.jpg"); /* The image used */
+    background-color: #4c4c4c; /* Used if the image is unavailable */
+    height: 286px;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    width: 286px;
+    margin: 0 auto 0 auto;
+}
+
+/*Media Queries - Specific to .circle-hero-img*/
+@media screen and (min-width: 576px) {
+    .circle-hero-img {
+        height: 400px;
+        width: 400px;
+    }
+  }
+
+@media screen and (min-width: 768px) {
+.circle-hero-img {
+    height: 576px;
+    width: 576px;
+}
+}
+
+.circle-hero-img h1 {
+    position: relative;
+    top: 20%;
+
+    font-family: 'yellowtail', cursive;
+    /*font-size: 10em; -See .display-1- */
+    color: #FAC00C;
+}
+
+@media screen and (min-width: 1200px) {
+    .circle-hero-img h1{
+        font-size: 180px !important;
+    }
+}
+
+/* home highlights images */
+    .gallery {
+        padding-bottom: 100px;
+    }
+    
+    .gallery a img {
+        padding: 7px;
+        border-radius: 50%;
+    } 
+    
+    .gallery a img:hover {
+        border: 2px solid rgba(255, 255, 255, 0.25);
+    }
+
+    /* Image Carousels */
+.carousel-inner {
+    padding-bottom: 3em;
+    height: 80vh;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 0 auto;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 4px;
+}
+
+/*Media Queries - Specific to .carousel-item img*/
+@media screen and (min-width: 576px) {
+    .carousel-inner {
+        height: initial;
+    }
+    .carousel-item img {
+        max-height: 80vh;
+        width: auto;
+    }
+  }
+
+@media screen and (min-width: 768px) {
+    .carousel-item img {
+        max-height: 80vh;
+    }
+}
+
+/* || Cards & Buttons */
+
+/* box-shadow syntax: box-shadow: h-offset v-offset blur spread color */
+.mycardcolor {
+    background-color: transparent !important;
+    border-color: #F27C3D; 
+    color: #F27C3D;
+}
+
+.mycardcatalog-size {
+    max-width: 230px;
+}
+
+.mybuttoncolor {
+    background-color: transparent !important;
+    border: 1px solid #F27C3D;
+    color: #F27C3D !important;
+}
+
+.mybuttoncolor:hover {
+    color: #F8F9FA;
+    background-color: rgba(255, 255, 255, 0.25) !important;
+    border: 2px solid #F27C3D !important;
+}
+
+.mybadgecolor {
+    background-color: #F27C3D;
+}
+
+.bigger-icons {
+    font-size: 1.5rem;
+}
+
+/* Bootstrap Accordion */
+.accordion-button:focus {
+    z-index: 3;
+    border-color: #f3db94;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(255, 255, 255, 0.18) !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+    filter: grayscale(100%);
+}
+
+/* || Form Styles */
+
+.myform {
+    border: 1px solid #F27C3D;
+    border-radius: 5px;
+}
+
+.form-text { /*BS Class*/
+    color: inherit;
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+} 
+
+.form-check-input {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.form-check-input:checked {
+    background-image: none;
+    background-color: #ffffff;
+    border: 3px solid #F27C3D;
+}
+
+.myinput-field {
+    background-color: rgba(255, 255, 255, 0.25);
+    color: rgba(255, 255, 255, .7);
+    border: 1px solid #F27C3D;
+}
+
+.myinput-field:focus {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000000;
+    border: 1px solid #FAC00C;
+
+}
+
+.myinput-field::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(255, 255, 255, .7);
+
+  }
+  
+.myinput-field::-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(255, 255, 255, .7);
+  }
+  
+.myinput-field::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgba(255, 255, 255, .7);
+  }
+
+
+
+
+
+/*How to get footer to stay at bottom of page?!?!?!*/
+/*
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    clear: both;
+}*/
+

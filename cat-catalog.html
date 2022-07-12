@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="vendor/bootstrap.min.css" rel="stylesheet">
+    <!--my CSS-->
+    <link href="style.css" rel="stylesheet">
+    <!--icon fonts-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/98780c2bc0.js" crossorigin="anonymous"></script>
+    <title>Kitty Catalog</title>
+  </head>
+
+  <body>
+    <!--Bootstrap Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#img-credits"> 
+            <img src="assets/catlogo-orange.svg" alt="" width="50" >
+          </a>
+          <!--Responsive Hamburger Menu Icon-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="cat-catalog.html">Kitty Catalog</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+                data-bs-toggle="dropdown" aria-expanded="false">
+                  Jump to a Cat
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item active" href="item1-spaceship.html">Spaceship</a></li>
+                  <li><a class="dropdown-item" href="item2-carlos.html">Carlos</a></li>
+                  <li><a class="dropdown-item" href="item3-clementine.html">Clementine</a></li>
+                  <li><a class="dropdown-item" href="item4-cheeks.html">Cheeks</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="credits.html">Credits</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+    <!--||||||||||||Main Content Start||||||||||||||||||||-->
+    <div class="container-fluid">
+      <div class="row">
+        <!--title-->
+        <header class="col-12">
+          <h1 class="display-2 text-center py-3">Kitty Cat-alog</h1>
+        </header>
+      </div>
+
+        <!--text content-->
+        
+
+        <div class= "row p-3 p-lg-5 mx-5"> <!--card catalog wrapper-->
+          <!--CARD1-->
+          <div class="col-sm-6 col-md-4 col-lg-3 p-2 p-md-3">
+            <div class="card mycardcolor mx-auto mycardcatalog-size h-100">
+              <img src="assets/catalog-images/spaceship_catalog_300.jpg" class="card-img-top img-fluid" alt="spaceship the cat">
+              <div class="card-body">
+                <h5 class="card-title pb-sm-2 pb-md-0">Spaceship</h5>
+                <a href="item1-spaceship.html" class="btn mybuttoncolor">Learn More about this Tiger <br><i class="fas fa-long-arrow-alt-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!--CARD2-->
+          <div class="col-sm-6 col-md-4 col-lg-3 p-2 p-md-3">
+            <div class="card mycardcolor mx-auto mycardcatalog-size h-100">
+              <img src="assets/catalog-images/carlos2_catalog_300.jpg" class="card-img-top" alt="carlos the cat">
+              <div class="card-body">
+                <h5 class="card-title">Carlos</h5>
+                <a href="item2-carlos.html" class="btn mybuttoncolor">Learn More about this F*cker <br><i class="fas fa-long-arrow-alt-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!--CARD3-->
+          <div class="col-sm-6 col-md-4 col-lg-3 p-2 p-md-3">
+            <div class="card mycardcolor mx-auto mycardcatalog-size h-100">
+              <img src="assets/catalog-images/cheeks_catalog_300.jpg" class="card-img-top" alt="cheeks the cat">
+              <div class="card-body">
+                <h5 class="card-title">Cheeks</h5>
+                <a href="item4-cheeks.html" class="btn mybuttoncolor">Learn More about this Chonk <br><i class="fas fa-long-arrow-alt-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!--CARD4-->
+          <div class="col-sm-6 col-md-4 col-lg-3 p-2 p-md-3">
+            <div class="card mycardcolor mx-auto mycardcatalog-size h-100">
+              <img src="assets/catalog-images/clementine_catalog_300.jpg" class="card-img-top" alt="clementine the cat">
+              <div class="card-body">
+                <h5 class="card-title pb-md-3 pb-lg-0">Clementine</h5>
+                <a href="item3-clementine.html" class="btn mybuttoncolor">Learn More about this lil' Baby <br><i class="fas fa-long-arrow-alt-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!--CARD5-->
+          <div class="col-sm-6 col-md-4 col-lg-3 p-2 p-md-3">
+            <div class="card mycardcolor mx-auto mycardcatalog-size h-100">
+              <img src="assets/catalog-images/attica_catalog_300.jpg" class="card-img-top" alt="clementine the cat">
+              <div class="card-body">
+                <h5 class="card-title">Attica the Baby<span class="badge mybadgecolor">Coming Soon!</span></h5>
+                <a href="#" class="btn mybuttoncolor disabled">Learn More about this Fluffy Nugget <br><i class="fas fa-long-arrow-alt-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!--CARD6-->
+          <div class="col-sm-6 col-md-4 col-lg-3 p-2 p-md-3">
+            <div class="card mycardcolor mx-auto mycardcatalog-size h-100">
+              <img src="assets/catalog-images/mysterycat_catalog_300.jpg" class="card-img-top" alt="clementine the cat">
+              <div class="card-body">
+                <h5 class="card-title pb-lg-2">Mystery Cat <span class="badge mybadgecolor">Coming Soon!</span></h5>
+                <a href="#" class="btn mybuttoncolor disabled">Learn More about this Dark Stranger <br><i class="fas fa-long-arrow-alt-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div> <!--Row / card catalog wrapper close-->  
+      </div> <!-- row close -->
+
+      
+      <!--FOOTER-->
+      <div class="row pt-5">
+        <footer class="col-12 p-5" id="img-credits">
+            <h6> Contact Us: allkatscats@fleabag.net </h6>
+            <h6> For Image Credits - <a href="credits.html">Click here</a></h6>
+            <h6> Follow the Cats:  <br> <br>
+              <span class="bigger-icons">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-linkedin"></i> 
+              </span>
+            </h6> 
+       
+        </footer>
+    </div> <!--row close-->
+    </div> <!--containter close--> 
+
+    <!--Bootstrap JS -->
+    <script src="vendor/bootstrap.bundle.min.js"></script>
+    <!--Popper-->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+
+    <!--Bootstrap Tooltip Initialization-->
+    <script>
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+      })
+    </script>
+  </body>
+</html>

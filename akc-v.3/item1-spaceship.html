@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!--my CSS-->
+    <link href="style.css" rel="stylesheet">
+    <!--icon fonts-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/98780c2bc0.js" crossorigin="anonymous"></script>
+    <title>Spaceship</title>
+  </head>
+  <body>
+    <!--Bootstrap Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="credits.html"> 
+            <img src="assets/catlogo-orange.svg" alt="" width="50" >
+          </a>
+          <!--Responsive Hamburger Menu Icon-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cat-catalog.html">Kitty Catalog</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+                data-bs-toggle="dropdown" aria-expanded="false">
+                  Jump to a Cat
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item active" href="item1-spaceship.html">Spaceship</a></li>
+                  <li><a class="dropdown-item disabled" href="#">Carlos</a></li>
+                  <li><a class="dropdown-item disabled" href="#">Clementine</a></li>
+                  <li><a class="dropdown-item disabled" href="#">Cheeks</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="credits.html">Credits</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <!--title-->
+        <header class="col-12">
+            <h1 class="text-center py-5">Spaceship</h1>
+        </header>
+
+        <!--image-->
+        <div class="mx-auto col-lg-6 pb-5">
+            <figure class="mx-auto text-center">
+                <img src="assets/spaceship1_700.jpg" alt="" class="img-fluid">
+                <figcaption>
+                    Spaceship relaxing in the sun. Click here for <a href="#img-credits">image credits</a>.
+                </figcaption>
+            </figure>
+         </div>
+     
+        <!--text content-->
+        <section class="col-12 col-lg-6 p-3">
+          <h2 class= "text-light pb-3">about this lil' mountain lion</h2>
+         
+            <!--Accordion Text-->
+          <div class="accordion" id="spaceship-info">
+            <div class="accordion-item mycardcolor">
+              <h2 class="accordion-header" id="about">
+                <button class="accordion-button mybuttoncolor" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  About Spaceship
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="about" data-bs-parent="#spaceship-info">
+                <div class="accordion-body">
+                  Spaceship is a lil' mountain lion. He's bigger than all the other cats and has those little
+                  tufty things on his ears that wild cats have. Once he disappeared for a whole year (presummably because
+                  he didn't like human Kat's noisy grandchildren) and returned chubby and totally unscathed. I'm convinced
+                  he was out there whoopin' mountain lion ass.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mycardcolor">
+              <h2 class="accordion-header" id="some-more-about">
+                <button class="accordion-button mybuttoncolor collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Some More About Him
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="some-more-about" data-bs-parent="#spaceship-info">
+                <div class="accordion-body">
+                  These days though, he's pretty much a lazy people cat. He spends his days asleep on the kitchen table 
+                  until someone gives him the boot. Then he sits on the armchair and swats at people as they walk by. 
+                  That sounds aggressive, but he's just trying to hustle pets. He's by far the most agressively social cat
+                  I've ever met.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mycardcolor">
+              <h2 class="accordion-header" id="favorite-foods">
+                <button class="accordion-button mybuttoncolor collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Favorite Foods
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="favorite-foods" data-bs-parent="#spaceship-info">
+                <div class="accordion-body">
+                  Obviously he eats cat food, like a normal cat, but let's be honest...Spaceship's a spoiled asshole, and kitty
+                  kibble is not his favorite. He prefers whatever your eating, or whatever you left on the counter last night.
+                  However, he is also pretty fond of hamburger and canned tuna.
+                </div>
+              </div>
+            </div>
+          </div> <!--accordion close-->
+
+        </section> <!--text content section close-->
+      </div> <!--row close-->
+
+      <section class= "row">
+        <h2 class="text-light">Some Cute Cat Videos</h2>
+        <!--Video - Temp-Spinners-->
+        <!-- 1 -->
+        <div class="col-md-5">
+          <figure class="temp-video-border">
+            <div class="spinner-border text-secondary" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <!--<video controls src=""></video>-->
+            <figcaption>
+            </figcaption>
+          </figure>
+        </div>
+        <!-- 2 -->
+        <div class="col-md-5">
+          <figure class="temp-video-border">
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+            </div>
+            <!--<video controls src=""></video>-->
+            <figcaption>
+            </figcaption>
+          </figure>
+        </div>
+      </section> <!--row close-->
+
+     <!--<section>
+        <h2>More Pictures of Spaceship</h2>
+      </section>-->
+      
+
+      <div class="row">
+        <footer class="col-12 p-5" id="img-credits">
+          <h6> Contact Us: allkatscats@fleabag.net </h6>
+          <h6> For Image Credits - <a href="credits.html">Click here</a></h6>
+          <h6> Follow the Cats:  <br> <br>
+            <span class="bigger-icons">
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-linkedin"></i> 
+            </span>
+          </h6> 
+     
+      </footer>
+      </div> <!--row close-->
+
+    </div>  <!--container close-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" 
+    crossorigin="anonymous"></script>
+  </body>
+</html>

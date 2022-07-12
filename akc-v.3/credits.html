@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!--my CSS-->
+    <link href="style.css" rel="stylesheet">
+    <!--icon fonts-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/98780c2bc0.js" crossorigin="anonymous"></script>
+    <title>Credits</title>
+  </head>
+
+  <body id="credits">
+    <!--Bootstrap Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#img-credits"> 
+            <img src="assets/catlogo-orange.svg" alt="" width="50" >
+          </a>
+          <!--Responsive Hamburger Menu Icon-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cat-catalog.html">Kitty Catalog</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+                data-bs-toggle="dropdown" aria-expanded="false">
+                  Jump to a Cat
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="item1-spaceship.html">Spaceship</a></li>
+                  <li><a class="dropdown-item disabled" href="#">Carlos</a></li>
+                  <li><a class="dropdown-item disabled" href="#">Clementine</a></li>
+                  <li><a class="dropdown-item disabled" href="#">Cheeks</a></li>
+                </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="credits.html">Credits</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!--||||||||||||||||||||Start Main Content|||||||||||||||||||||||||||||||-->
+
+    <div class="container-fluid">
+      <div class="row">
+        <!--title-->
+        <header class="col-12">
+          <h1 class="text-center py-5">Thanks for Coming!</h1>
+
+        </header>
+
+        <!--text content-->
+        
+        <!--Feedback Form-->
+        <div class="col-10 col-md-8 col-lg-6 mx-auto ps-lg-5 ps-3">
+            <h2 class="text-center">Tell Us What You Think</h2>
+
+            <form class="row myform p-3" action="https://formspree.io/f/xleazqdl" method="POST">
+                <!--Form Col 1 - radio input-->
+                <div class="col-6">
+                    <p class="form-text" id="goodest-kitty">Who's the Goodest Kitty?</p>
+                    <div class="form-check">
+                        <input class="form-check-input" aria-describedby="goodest-kitty" type="radio" value="spaceship" name="favorite-cat" id="spaceship">
+                        <label class="form-check-label" for="spaceship">
+                        Spaceship
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" aria-describedby="goodest-kitty" type="radio" value="Carlos" name="favorite-cat" id="carlos" checked>
+                        <label class="form-check-label" for="carlos">
+                        Carlos
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" aria-describedby="goodest-kitty" type="radio" value="Cheeks" name="favorite-cat" id="cheeks">
+                        <label class="form-check-label" for="cheeks">
+                        Cheeks
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" aria-describedby="goodest-kitty" type="radio" value="Clementine" name="favorite-cat" id="clementine">
+                        <label class="form-check-label" for="clementine">
+                        Clementine
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" aria-describedby="goodest-kitty" type="radio" value="Attica" name="favorite-cat" id="Attica-the-baby">
+                        <label class="form-check-label" for="Attica-the-baby">
+                        Attica the Baby
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" aria-describedby="goodest-kitty" type="radio" value="Mystery-Cat" name="favorite-cat" id="mystery-cat">
+                        <label class="form-check-label" for="mystery-cat">
+                        Mystery Cat
+                        </label>
+                    </div>
+                </div> <!--Col-1/radio wrapper close-->
+                <!--Form Col 2-->
+                <div class= col-6>
+                    <!--File Upload Section-->
+                    <div class="mb-3">
+                        <label for="uploadfile-yourcat" class="form-label">Share picture of your favorite feline!</label>
+                        <input type="file" name="your-cat-pic" class="form-control myinput-field" id="uploadfile-yourcat">
+                    </div>
+                    <!--email input section-->
+                    <div class="mb-3">
+                        <label for="newsletter-email" class="form-label">Want More? Sign up for our Newsletter</label>
+                        <input type="email" name="newsletter-email" class="form-control myinput-field" id="newsletter-email" placeholder="kittykittykitty@fleabag.net">
+                    </div>
+                    <div class="mb-3">
+                        <label for="comments" name="comments" class="form-label">Any other comments or feedback? Let us know here.</label>
+                        <textarea class="form-control myinput-field" id="comments" rows="3"> Tell us what you think.</textarea>
+                    </div>
+                </div> <!--Col-2 Wrapper Close-->
+                <input type="submit" value="Submit" class="col-6 mx-auto mybuttoncolor">
+            </form>
+        </div> <!--form wrapper close-->
+              
+
+        <!-- Multi Card Wrapper-->
+        <div class="col-10 col-md-8 col-lg-6 mx-auto">
+            <h2 class="text-center">Credits</h2>
+
+            <!--Card1 - Images & Logo Info-->
+            <div class= "p-3">
+                <div class="card mycardcolor">
+                    <div class="card-body">
+                        <h5 class="card-title pb-3"> Images & Logo </h5>
+
+                        <p class="card-text">
+                            Logo Image - <span class= "fw-lighter"><a href="https://freesvg.org/vector-image-of-huge-smile-cat-face" 
+                            data-bs-toggle="tooltip" data-bs-placement="top" title="View Original SVG"> "Vector image of huge smile cat face"</a>
+                            by <a href="https://freesvg.org/by/OpenClipart" data-bs-toggle="tooltip" data-bs-placement="top" 
+                            title="View Original Source/Creator"> OpenClipArt at FreeSVG.org</a>, licensed under 
+                            <a href="https://creativecommons.org/publicdomain/zero/1.0/" data-bs-toggle="tooltip" data-bs-placement="top" title="View License">CC0 1.0</a></span>
+                        </p>
+                        <p class="card-text">
+                            All other Images <span class= "fw-lighter"></span>by Erin Potter
+                        </p>
+                    </div>
+                </div> <!-- card close-->
+        </div> <!--card wrapper close-->
+
+                <!--Card2 - Misc. Text Info-->
+            <div class= "p-3">
+                    <div class="card mycardcolor">
+                        <div class="card-body">
+                            <h5 class="card-title pb-3"> Textual Content </h5>
+            
+                            <p class="card-text">
+                            So far, all this fascinating content is written by me, Erin Potter.
+                        </div>
+                    </div> <!-- card close-->
+                </div> <!--card-wrapper close-->
+
+                <!--Card3 - Cats-->
+                <div class= "p-3">
+                    <div class="card mycardcolor">
+                        <div class="card-body">
+                            <h5 class="card-title pb-3"> The Cats </h5>
+
+                            <p class="card-text">
+                                A big thank you to all of Kat's cats who participated in this project, and were
+                                good sports about me waving my camera in their face. 
+                            </p>
+                            <small class= "text-muted">
+                                Yeah, specifically NOT looking at you, Clementine (currently not-pictured).
+                            </small>
+                            
+                        </div>
+                    </div> <!-- card close-->
+                </div> <!--card-wrapper close-->
+            </div> <!--multi-card-wrapper close-->
+
+        </div>  <!--row close-->
+
+       
+      
+
+        <!--FOOTER-->
+        <div class="row pt-5">
+          <footer class="col-12 p-5" id="img-credits">
+            <h6> Contact Us: allkatscats@fleabag.net </h6>
+            <h6> Follow the Cats:  <br> <br>
+              <span class="bigger-icons">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-linkedin"></i> 
+              </span>
+            </h6> 
+       
+        </footer>
+        </div> <!--row close-->
+    </div>  <!--container close-->
+
+    <!--Bootstrap JS + Popper-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" 
+    crossorigin="anonymous"></script>
+
+    <!--Bootstrap Tooltip Initialization-->
+    <script>
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+      })
+    </script>
+  </body>
+</html>

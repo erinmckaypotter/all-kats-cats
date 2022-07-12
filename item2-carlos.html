@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="vendor/bootstrap.min.css" rel="stylesheet">
+    <!--my CSS-->
+    <link href="style.css" rel="stylesheet">
+    <!--icon fonts-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/98780c2bc0.js" crossorigin="anonymous"></script>
+    <title>Carlos</title>
+  </head>
+  <body>
+    <!--Bootstrap Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="credits.html"> 
+            <img src="assets/catlogo-orange.svg" alt="" width="50" >
+          </a>
+          <!--Responsive Hamburger Menu Icon-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cat-catalog.html">Kitty Catalog</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+                data-bs-toggle="dropdown" aria-expanded="false">
+                  Jump to a Cat
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="item1-spaceship.html">Spaceship</a></li>
+                  <li><a class="dropdown-item active" href="item2-carlos.html">Carlos</a></li>
+                  <li><a class="dropdown-item" href="item3-clementine.html">Clementine</a></li>
+                  <li><a class="dropdown-item" href="item4-cheeks.html">Cheeks</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="credits.html">Credits</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!--||||||||||||Main Content Start||||||||||||||||||||-->
+
+    <div class="container-fluid">
+      <section class="row">
+        <!--title-->
+        <header class="col-12">
+            <h1 class="display-2 text-center py-2 py-md-5">Carlos</h1>
+        </header>
+
+        <!--image-->
+        <div class="mx-auto col-sm-10 col-md-8 col-lg-6 pb-2 pb-md-5">
+            <figure class="mx-auto text-center">
+                <img class="circle-img img-fluid" src="assets/carlos/carlos1_sq_700.jpg" alt="carlos">
+                <figcaption>
+                    Carlos. Click here for <a href="credits.html">image credits</a>.
+                </figcaption>
+            </figure>
+         </div>
+     
+        <!--text content-->
+        <section class="col-12 col-lg-6 p-3 pb-5">
+          <h2 class= "pb-3">about this lil' f*cker</h2>
+         
+          <!--Accordion Text-->
+          <div class="accordion" id="carlos-info">
+            <div class="accordion-item mycardcolor">
+              <h2 class="accordion-header" id="about">
+                <button class="accordion-button mybuttoncolor" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  About Carlos
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="about" data-bs-parent="#carlos-info">
+                <div class="accordion-body">
+                    Carlos is lil' f*cker. He kind of terrorizes the other cats, because he isn't neutered and apparently
+                    that makes him wanna pick fights all the time like a macho asshole. But he's nice to me
+                    and that's what counts. I love him. He's a cuddly lil' baby who walks up to me and rolls over for 
+                    belly rubs, and it's super frickin' cute. If you lay still long enough he'll sleep on your chest,
+                    and doesn't that totally make up for the dickishness?
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mycardcolor">
+              <h2 class="accordion-header" id="some-more-about">
+                <button class="accordion-button mybuttoncolor collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Recent Battle Stories
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="some-more-about" data-bs-parent="#carlos-info">
+                <div class="accordion-body">
+                    The other day Carlos picked a fight with the wrong critter (identity unknown. Possibly Spaceship...possibly
+                    a racoon), who bit him straight up in the eye socket. It swelled up and got pretty knarly. The vet said he was 
+                    lucky he didn't lose the eye. But he got off easy with a swollen face, and a weeks worth of kitty narcotics. 
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mycardcolor">
+              <h2 class="accordion-header" id="favorite-foods">
+                <button class="accordion-button mybuttoncolor collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Some More About Carlos
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="favorite-foods" data-bs-parent="#carlos-info">
+                <div class="accordion-body">
+                    Carlos is a wierdly muscular cat. Like super beefy. I guess I kind of understand why the other cats
+                    are scared of him. The vet said its (again) because he's not neutured, and proceeded to give me a
+                    lot of crap about having an unneutered male, and I was like "Hey man, its not even my cat! I just take care
+                    of him sometimes." And then he gave me some more crap anyway.
+                </div>
+              </div>
+            </div>
+          </div> <!--accordion close-->
+
+        </section> <!--text section close-->
+      </section><!--row close-->
+
+      <!--Photos Section-->
+      <section class= "row">
+    
+        <h2 class="text-center pb-3">Look at this cutie:</h2>
+
+        <!--Image Carousel-->
+        <div id="cat-carousel" class="carousel slide col-md-8 mx-auto" data-bs-ride="carousel">
+         
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/carlos/carlos_slideshow1.jpg" class="d-block" alt="Carlos 1">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/carlos/carlos_slideshow2.jpg" class="d-block" alt="Carlos 2">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/carlos/carlos_slideshow3.jpg" class="d-block" alt="Carlos 3">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/carlos/carlos_slideshow4.jpg" class="d-block" alt="Carlos 4">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/carlos/carlos_slideshow5.jpg" class="d-block" alt="Carlos 5">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/carlos/carlos_slideshow6.jpg" class="d-block" alt="Carlos 6">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/carlos/carlos_slideshow7.jpg" class="d-block" alt="Carlos 7">
+            </div>
+          </div>
+            <!--Prev/Next Buttons-->
+          <button class="carousel-control-prev" type="button" data-bs-target="#cat-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#cat-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section> <!--row close-->
+
+      <div class="row">
+        <footer class="col-12 p-5" id="img-credits">
+          <h6> Contact Us: allkatscats@fleabag.net </h6>
+          <h6> For Image Credits - <a href="credits.html">Click here</a></h6>
+          <h6> Follow the Cats:  <br> <br>
+            <span class="bigger-icons">
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-linkedin"></i> 
+            </span>
+          </h6> 
+     
+      </footer>
+      </div> <!--row close-->
+
+    </div>  <!--container close-->
+
+    <!--BS JS-->
+    <script src="vendor/bootstrap.bundle.min.js"></script>
+    <!--Popper-->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+  </body>
+</html>

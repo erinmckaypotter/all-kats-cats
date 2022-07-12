@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Simple-Lightbox Plugin CSS -->
+    <link href="vendor/simple-lightbox.min.css" rel="stylesheet">
+ 
+    <title>Simple Lightbox Test</title>
+  </head>
+
+  <body>
+    <!-- Lightbox Start-->
+    <div class="gallery"> 
+
+        <a href="assets/catalog-images/spaceship_catalog_300.jpg" class="big">
+          <img src="assets/catalog-images/spaceship_catalog_300.jpg" alt="" title="Image 1">
+        </a>
+      
+        <a href="assets/catalog-images/carlos2_catalog_300.jpg" class="big">
+          <img src="assets/catalog-images/carlos2_catalog_300.jpg" alt="" title="Image 2">
+        </a>
+      
+        <a href="assets/catalog-images/cheeks_catalog_300.jpg" class="big">
+          <img src="assets/catalog-images/cheeks_catalog_300.jpg" alt="" title="Image 3">
+        </a>
+      
+        <a href="assets/catalog-images/wrongcat_catalog_300.jpg" class="big">
+          <img src="assets/catalog-images/wrongcat_catalog_300.jpg" alt="" title="Image 4">
+        </a>
+        
+      </div>
+
+      <!--JS-->
+      
+      <script src="vendor/simple-lightbox.min.js"></script>
+      <!-- Simple Lightbox JS For legacy browsers -->
+      <script src="vendor/simple-lightbox.legacy.min.js"></script>
+      <script>
+        var gallery = new SimpleLightbox('.gallery a', {captions: false});
+      </script>
+  </body>
+</html> 
